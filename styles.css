@@ -4,6 +4,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatar {
@@ -15,6 +18,7 @@ body {
   height: auto;
   padding: 20px;
   font-size: 40px;
+  text-align: center;
 }
 
 .avatar img {
@@ -24,11 +28,11 @@ body {
 
 .buttons {
   display: flex;
-  flex-direction: column; /* Выровнять кнопки вертикально */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  gap: 20px; /* Расстояние между кнопками */
+  gap: 20px;
 }
 
 .button1,
@@ -37,18 +41,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4c63c7; /* Белый фон для кнопок */
-  border-radius: 10px; /* Закругление углов кнопок */
-  padding: 10px 20px; /* Отступы внутри кнопок */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для кнопок */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для фона и тени */
+  background-color: #4c63c7;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 300px; /* Установите фиксированную ширину для всех кнопок */
+  height: 100px; /* Установите фиксированную высоту для всех кнопок */
 }
 
 .button1:hover,
 .button2:hover,
 .button3:hover {
-  background-color: #725aff; /* Цвет фона при наведении */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Более яркая тень при наведении */
+  background-color: #725aff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .button1 a,
@@ -59,7 +65,10 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  width: 100%; /* Занимает всю ширину кнопки */
+  height: 100%; /* Занимает всю высоту кнопки */
 }
 
 .small-image {
@@ -72,6 +81,7 @@ body {
   font-size: 30px;
   color: rgb(201, 255, 255);
   margin: 30px;
+  text-align: center; /* Выровнять текст по центру */
 }
 
 .me {
