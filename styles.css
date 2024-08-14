@@ -1,1 +1,92 @@
+body {
+  overflow-x: hidden;
+  background-image: url("images/R.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.avatar img {
+  width: 350px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  gap: 20px;
+}
+
+.button1,
+.button2,
+.button3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4c63c7;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 300px; /* Установите фиксированную ширину для всех кнопок */
+  height: 100px; /* Установите фиксированную высоту для всех кнопок */
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  background-color: #725aff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button1 a,
+.button2 a,
+.button3 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%; /* Занимает всю ширину кнопки */
+  height: 100%; /* Занимает всю высоту кнопки */
+}
+
+.small-image {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.about {
+  font-size: 30px;
+  color: rgb(201, 255, 255);
+  margin: 30px;
+  text-align: center; /* Выровнять текст по центру */
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
